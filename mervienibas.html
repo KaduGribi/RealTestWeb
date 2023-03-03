@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Informācijas daudzuma mērvienības</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/mansStils.css">
+    </head>
+    <body>
+        <script>
+            function megabytefunc() {
+                console.log("mb");
+                let mb = document.getElementsByName('megabyte');
+                let gigabyteValue = document.getElementsByName('gigabyte');
+                let megabyteValue = gigabyteValue.value / 1000;
+                
+                mb.value = megabyteValue;
+            }
+            
+            function mibibytefunc() {
+                console.log("mib");
+                let mib = document.getElementsByName('mibibyte');
+                let gigabyteValue = document.getElementsByName('gigabyte');
+                let megabyteValue = gigabyteValue.value / 1000;
+                
+                mib.value = megabyteValue * 1.024;
+            }
+        </script>
+        <form>
+            <p><input name="gigabyte"><span>GB=</span></p>
+            <p>
+                <input onclick="megabytefunc()" value="Izteikt megabaitos" type="button">
+                <input name="megabyte"><span>MB</span>
+            </p>
+            <p>
+                <input onclick="mibibytefunc()" value="Izteikt mibibaitos" type="button">
+                <input name="mibibyte"><span>MiB</span>
+            </p>
+        </form>
+    </body>
+</html>
