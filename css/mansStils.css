@@ -1,0 +1,68 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+
+p, td, th {
+    font-size: 135%;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+div {
+    padding: 2em;
+    padding-bottom: 0;
+}
+
+.arrow-holder {
+    text-align: center;
+}
+
+.arrow {
+    display: inline-block;
+    max-width: 5%;
+    height: auto;
+}
+
+.disabled {
+    filter: opacity(50%);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 1em;
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 2em;
+}
+
+table, th, td {
+    border: solid black;
+}
+
+th {
+    padding-bottom: 1em;
+}
+
+td {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+body {
+    background: linear-gradient(black, white);
+}
