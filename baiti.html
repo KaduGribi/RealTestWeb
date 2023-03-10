@@ -12,7 +12,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
     <body>
         <script>
             function clearinputs() {
-                console.log("cl");
                 let ans = document.getElementById('answer');
                 let seconds = document.getElementById('sekundes');
                 
@@ -21,20 +20,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             }
             
             function kibibytescript() {
-                console.log("kib");
                 let ans = document.getElementById('answer');
                 let seconds = document.getElementById('sekundes');
-                let megabyteValue = seconds.value * 25;
+                let megabyteValue = seconds.value * 25 / 8;
                 
-                console.log("kib: " + megabyteValue);
-                ans.value = megabyteValue * 1024;
+                ans.value = megabyteValue * 1000 / 1.024;
             }
             
             function kilobytescript() {
-                console.log("kb");
                 let ans = document.getElementById('answer');
                 let seconds = document.getElementById('sekundes');
-                let megabyteValue = seconds.value * 25;
+                let megabyteValue = seconds.value * 25 / 8;
                 
                 ans.value = megabyteValue * 1000;
             }
